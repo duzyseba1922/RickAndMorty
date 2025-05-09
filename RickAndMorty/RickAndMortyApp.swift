@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct RickAndMortyApp: App {
+    
+    let webService = WebService()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CharactersListView(webService: webService)
         }
     }
 }
